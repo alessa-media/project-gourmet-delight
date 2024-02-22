@@ -7,24 +7,16 @@
 
 /*roots*/
 :root{
-  --jetblack: #333333;
-  --lightblack: #393d3f;
-  --bronze: #a44200;
-  --ecru: #d8bd8a;
-  --green: #96a13a;
-  --darkbronze: #6b2b00;
+
 }
 
 /*Schriften, Listen und Bilder*/
 a{
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  color: var(--green);
+
 }
 
 a:hover{
-  font-family: 'Roboto', sans-serif;
-  color: var(--bronze);
+
 }
 
 a, button{
@@ -34,52 +26,27 @@ a, button{
 }
 
 h1{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 128px;
-  color: var(--jetblack);
-  line-height: 170px;
-  padding: 60px;
-  text-align: center;
+  
 }
 
 h2{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 64px;
-  color: var(--lightblack);
-  line-height: 70px;
-  text-align: center;
-  padding: 60px;
-  text-align: center;
+  
 }
 
 h3{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 40px;
-  color: var(--lightblack);
-  line-height: 45px;
-  text-align: left;
-  padding: 40px;
+
 }
 
 h4{
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 25px;
-  color: var(--bronze);
-  line-height: 30px;
-  text-align: left;
-  padding: 40px 0px 20px 30px !important;
+
 }
 
 p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: var(--jetblack);
+
 }
 
 li{
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: var(--jetblack);
+
 }
 
 img{
