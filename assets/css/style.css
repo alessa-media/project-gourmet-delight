@@ -7,16 +7,20 @@
 
 /*roots*/
 :root{
-
+  --black: #040F0F;
+  --darkgray: #50555A;
+  --lightray: #A1A1A1;
+  --orange: #BA2D0B;
+  --red: #960200;
 }
 
 /*Schriften, Listen und Bilder*/
 a{
-
+  color: var(--black);
 }
 
 a:hover{
-
+  color: var(--orange);
 }
 
 a, button{
