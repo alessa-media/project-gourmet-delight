@@ -21,7 +21,26 @@
         </nav>
     <main>
         <img src="assets/img/preparing3.jpg" alt="Der Koch mischt Lebensmittel in einer Pfanne">
-
+        <form class="form">
+            <label for="name">Name und Vorname</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="Betreff">Betreff</label>
+            <input type="text" id="betreff" name="betreff" required>
+            
+            <label for="Nachricht">Nachricht</label>
+            <input class="message" type="text" id="nachricht" name="nachricht" required>
+            
+            <label for="Email">E-Mail Adresse</label>
+            <input type="text" id="Email" name="Email" required>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="agree" name="agree" value="Zustimmung" required>
+                <label for="agree"> Ja, ich akzeptiere die <a href="impressum.html" target="_blank">Datenschutzerklärung.</a></label>
+            </div>
+                                    
+            <input class="button" type="reset" value="Senden">
+        </form>
     </main>
     <footer>
 
