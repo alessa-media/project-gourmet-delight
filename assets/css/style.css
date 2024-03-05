@@ -15,12 +15,12 @@
 }
 
 /*Schriften*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap');
 
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+.roboto-slab-uniquifier {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -36,10 +36,16 @@
   font-style: normal;
 }
 
-.roboto-bold {
+.roboto-black {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .roboto-medium-italic {
@@ -48,23 +54,17 @@
   font-style: italic;
 }
 
-.roboto-bold-italic {
+.roboto-black-italic {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-style: italic;
 }
 
-/* <uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 400 to 700 */
-
-.dancing-script-font {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
   font-style: normal;
 }
-
-
 
 
 /*Schriften, Listen und Bilder*/
@@ -89,12 +89,14 @@ h1{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "Dancing Script", cursive;
-  font-size: 50px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 100px;
 }
 
 h2{
   color: var(--black);
+  font-family: "Roboto Slab", serif;
+  font-size: 60px;
 }
 
 h3{
@@ -121,9 +123,14 @@ img{
 
 /*Header*/
 header{
-  height: 100px;
+  height: 110px;
   background-color: var(--black);
   color: var(--lightgray);
+  z-index: 2;
+  position: absolute; /* or position: fixed, if you want a sticky menüüüüü*/
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 header a{
@@ -138,10 +145,16 @@ header a{
 }
 
 /*main*/
-.hero-img{
-  height: 100vh;
-  object-fit: cover;
+.hero-img-container{
   position: relative;
+  height: 100vh;
+}
+
+.hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .img-element{
