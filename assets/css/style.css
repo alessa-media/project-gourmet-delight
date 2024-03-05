@@ -80,6 +80,7 @@ a, button{
   text-decoration: none;
   transition: color .4s ease-in-out;
   background-color: .4s ease-in-out;
+  color: var(--lightgray);
 }
 
 h1{
@@ -155,7 +156,6 @@ header a{
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  opacity: 0.75;
 }
 
 .img-element{
@@ -164,9 +164,40 @@ header a{
   flex-wrap: wrap;
 }
 
-.img-element img{
+.img-element-element{
   width: 33%;
+
+  position: relative;
+  display: inline-block;
+}
+
+.img-element-opacity{
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.img-element-element img{
   object-fit: cover;
+}
+
+.img-element-button{
+  z-index: 2;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+  background-color: .4s ease-in-out;
+  background-color: var(--black);
+  color: var(--lightgray);
+  height: 50px;
+  width: 100px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*footer*/
