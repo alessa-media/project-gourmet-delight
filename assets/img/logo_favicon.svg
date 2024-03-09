@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 639 926">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: ColonnaMT, 'Colonna MT';
+        font-size: 755.59px;
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_4" data-name="Ebene 4">
+    <circle class="cls-2" cx="303.5" cy="455.5" r="278.5"/>
+  </g>
+  <g id="Ebene_1" data-name="Ebene 1">
+    <text class="cls-1" transform="translate(66.67 652.8)"><tspan x="0" y="0">G</tspan></text>
+  </g>
+</svg>

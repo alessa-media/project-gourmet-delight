@@ -81,6 +81,8 @@ a, button{
   transition: color .4s ease-in-out;
   background-color: .4s ease-in-out;
   color: var(--lightgray);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 h1{
@@ -132,17 +134,30 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  padding: 20px 100px 10px 100px;
 }
 
 header a{
   color: var(--lightgray);
 }
 
-.main-menu ul li{
+/*Navigation*/
+.main-menu ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+
+.main-menu{
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.main-menu ul li a img{
+  height: 70px;
 }
 
 /*main*/
@@ -211,6 +226,18 @@ header a{
 footer{
   background-color: var(--black);
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p{
+  color: var(--lightgray);
+}
+
+footer > *{
+  flex-basis: 30%;
 }
 
 .footer a{

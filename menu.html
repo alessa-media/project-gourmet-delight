@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
 
     <title>Menü | Gourmet Delight (Wil SG)</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo_favicon.svg">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="main-menu">
             <ul>
                 <li><a href="index.html">Startseite</a></li>
                 <li><a tabindex="0" aria-current="page">Menü</a></li>
+                <li><a href="index.html"><img src="assets/img/logo_weiss.svg"></a></li>
                 <li><a href="about_us.html">Über uns</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
@@ -49,7 +51,27 @@
         <h2>Getränke</h2>
     </main>
     <footer>
-
+        <div class="footer_adresse">
+            <p>
+                Alessa Sprinz<br>
+                Spechtstrasse 5<br>
+                9320 Arbon
+            </p>
+        </div>
+        <div class="footer_impressum">
+            <a href="impressum.html" target="_blank">Impressum & Datenschutz</a>
+        </div>
+        <!--Social Icons-->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i data-feather="instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i data-feather="linkedin"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i data-feather="youtube"></i></a>
+        </div>
+    </footer>
+    <!--Replace i with svg-->
+    <script>
+        feather.replace();
+    </script>
     </footer>
 </body>
 </html>
