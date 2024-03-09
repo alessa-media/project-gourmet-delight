@@ -225,7 +225,7 @@ header a{
 /*footer*/
 footer{
   background-color: var(--black);
-  height: 100px;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
