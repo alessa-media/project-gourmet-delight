@@ -310,6 +310,26 @@ header a{
   max-width: 100% !important;
 }
 
+/*About us*/
+.team{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team > *{
+  flex-basis: 33.3%;
+}
+
+.team_img{
+  max-height: 500px !important;
+  max-width: 500px !important;
+  flex-basis: 33%;
+  padding: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 /*Contact form*/
 .form{
   display: flex;
