@@ -172,6 +172,7 @@ header a{
   max-width: 80%;
   text-align: center;
 }
+
 .hero-img-container{
   position: relative;
   height: 100vh;
@@ -233,6 +234,30 @@ header a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Menu*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  grid-template-rows: 80px 80px;
+  border-bottom: solid 2px var(--black);
+}
+
+.menu_dish-title, .menu_dish-details{
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin: 0;
+}
+
+.menu_dish-price{
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  margin: 0;
+  max-width: 100% !important;
 }
 
 /*Animations*/
