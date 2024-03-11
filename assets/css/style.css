@@ -322,21 +322,21 @@ header a{
   overflow: hidden;
 }
 
+.img-element-element img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+}
+
 .img-element-element img:hover{
   opacity: 0.6;
-  transition: opacity 0.4s ease-in-out;
   background-color: .4s ease-in-out;
 }
 
 .img-element-opacity{
   opacity: 0.5;
   z-index: 1;
-}
-
-.img-element-element img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .img-element-button{
