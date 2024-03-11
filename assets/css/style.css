@@ -260,6 +260,50 @@ header a{
   max-width: 100% !important;
 }
 
+/*Contact form*/
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: var(--black);
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.form input{
+  background-color: var(--lightgray);
+  border: none;
+  border-radius: 2px;
+  min-height: 30px;
+  margin-bottom: 20px;
+}
+
+.message{
+  height: 90px;
+  width: 100% !important;
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.checkbox input{
+  max-width: 15px;
+  margin-bottom: 0px;
+}
+
+.map{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 450px;
+}
+
 /*Animations*/
 .arrow
 {
