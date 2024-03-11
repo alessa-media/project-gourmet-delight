@@ -10,8 +10,8 @@
   --black: #040F0F;
   --darkgray: #50555A;
   --lightgray: #A1A1A1;
-  --orange: #BA2D0B;
-  --red: #960200;
+  --orange: #9A0003;
+  --red: #5A0001;
 }
 
 /*Schriften*/
@@ -69,20 +69,22 @@
 
 /*Schriften, Listen und Bilder*/
 a{
-  color: var(--black);
+  color: var(--orange);
+  transition: color .4s ease-in-out;
 }
 
 a:hover{
-  color: var(--orange);
+  color: var(--red);
+  font-weight: bold;
 }
 
 a, button{
   text-decoration: none;
   transition: color .4s ease-in-out;
   background-color: .4s ease-in-out;
-  color: var(--lightgray);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  border-radius: 2px;
 }
 
 h1{
@@ -168,7 +170,7 @@ img{
 
 /*Header*/
 header{
-  height: 110px;
+  height: 115px;
   background-color: var(--black);
   color: var(--lightgray);
   z-index: 2;
@@ -184,22 +186,35 @@ header a{
 }
 
 /*Navigation*/
-.main-menu ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  gap: 30px;
-}
-
 .main-menu{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.main-menu ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.main-menu ul li{
+  transition: .4s ease-in-out;
+}
+
+.main-menu ul li:hover{
+  scale: 1.1;
+}
+
 .main-menu ul li a img{
   height: 70px;
+}
+
+.scale{
+  color: var(--red);
 }
 
 /*main*/
@@ -221,6 +236,27 @@ header a{
 }
 
 /*Homepage*/
+.hero-section{
+  margin: 100px auto 100px auto;
+}
+
+.button_reservation{
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--black);
+  color: var(--lightgray);
+  border: none;
+  font-style: italic;
+  transition: .4s ease-in-out;
+}
+
+.button_reservation:hover{
+  background-color: var(--orange);
+  color: white;
+  transform: scale(1.1);
+}
+
 .adress_element{
   max-width: 70%;
   display: flex;
@@ -228,11 +264,48 @@ header a{
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .adress_element > *{
   flex-basis: 33%;
   text-align: center;
+}
+
+.specialities{
+  background-color: var(--darkgray);
+  padding: 50px 0px 150px;
+  margin-bottom: 100px;
+}
+
+.specialities h2, .specialities p{
+  color: white;
+}
+
+.specialities_button{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.specialities_button-menu button, .specialities_button-contact button{
+  flex-basis: 50%;
+  height: 50px;
+  max-width: 100px;
+  background-color: var(--black);
+  color: var(--lightgray);
+  border: none;
+  font-style: italic;
+  transition: .4s ease-in-out;
+  margin: 0 auto;
+}
+
+.specialities_button button:hover{
+  background-color: var(--orange);
+  color: white;
+  transform: scale(1.1);
 }
 
 .img-element{
@@ -278,12 +351,19 @@ header a{
   background-color: .4s ease-in-out;
   background-color: var(--black);
   color: var(--lightgray);
+  font-style: italic;
   height: 50px;
   width: 100px;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.img-element-button:hover{
+  background-color: var(--red);
+  color: var(--lightgray);
+  font-weight: normal;
 }
 
 /*Menu-Page*/
