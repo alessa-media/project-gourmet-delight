@@ -213,6 +213,10 @@ header a{
   height: 70px;
 }
 
+.main-menu ul li a:hover{
+  color: var(--orange);
+}
+
 .scale{
   color: var(--red);
 }
@@ -391,23 +395,54 @@ header a{
 }
 
 /*About us*/
-.team{
+.team {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.team > *{
-  flex-basis: 33.3%;
-}
-
-.team_img{
-  max-height: 500px !important;
-  max-width: 500px !important;
-  flex-basis: 33%;
+.team > * {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
   padding: 10px;
-  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.team_img, .team_img-jobsearching {
+  position: relative;
+  display: block;
+  width: 300px; /* Set a fixed width for all images */
+  height: 200px;
+  height: auto;
   overflow: hidden;
+}
+
+.team_img img, .team_img-jobsearching img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.team_img-job, .team_img-jobsearching {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team_img p, .team_img h4 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.team_img-job button, .team_img-jobsearching button {
+  color: white;
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /*Contact form*/
