@@ -12,6 +12,7 @@
   --lightgray: #A1A1A1;
   --orange: #9A0003;
   --red: #5A0001;
+  --lightred: #974d4e;
 }
 
 /*Schriften*/
@@ -218,7 +219,7 @@ header a{
 }
 
 .scale{
-  color: var(--red);
+  color: var(--darkgray);
 }
 
 /*main*/
