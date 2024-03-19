@@ -226,46 +226,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.top {
-  --offset: 50px; 
-  position: sticky;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  
-  /* visual styling */
-  text-decoration: none;
-  padding: 10px;
-  font-family: sans-serif;
-  color: var(--lightgray);
-  background: var(--black);
-  border: none;
-  border-radius: 100px;
-  white-space: nowrap;
-  font-style: italic;
-  transition: .4s ease-in-out;
-  
-  /*
-  --offset: 50px; 
-  position: sticky;
-  bottom: 20px;
-  margin-right:10px; 
-  place-self: end;
-  margin-top: calc(100vh + var(--offset));
-
-  /* visual styling 
-  text-decoration: none;
-  padding: 10px;
-  font-family: sans-serif;
-  color: var(--lightgray);
-  background: var(--black);
-  border: none;
-  border-radius: 100px;
-
-  font-style: italic;
-  transition: .4s ease-in-out; */
-}
-
 /*main*/
 .main p{
   max-width: 80%;
@@ -416,6 +376,10 @@ html {
 }
 
 /*Menu-Page*/
+.menu_grid{
+  padding-bottom: 150px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -465,6 +429,28 @@ html {
   transform: scale(1.1);
 }
 
+.top {
+  --offset: 400px; 
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  margin-right:10px; 
+  /*place-self: end;*/
+  margin-top: calc(100vh + var(--offset));
+  
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: var(--lightgray);
+  background: var(--black);
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-style: italic;
+  transition: .4s ease-in-out;
+}
+
 /*About us*/
 .team {
   display: flex;
@@ -493,6 +479,13 @@ html {
   object-fit: cover;
 }
 
+.team_img-job {
+  position: absolute;
+  top: 50%; /* Positioned at the vertical center */
+  left: 50%; /* Positioned at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the button */
+  z-index: 1; /* Ensure the button is on top of the image */
+}
 /*
 .team_img-job, .team_img-jobsearching {
   position: absolute;
@@ -513,9 +506,21 @@ html {
   color: white;
   font-family: "Kaushan Script", cursive;
   font-size: 40px;
-  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--black);
+  color: var(--lightgray);
   border: none;
+  border-radius: 5px;
+  transition: .4s ease-in-out;
   cursor: pointer;
+}
+
+.team_img-job button:hover{
+  background-color: var(--orange);
+  color: white;
+  transform: scale(1.1);
 }
 
 .quality{
@@ -574,7 +579,7 @@ html {
 
 .map{
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 200px auto;
   width: 80%;
   height: 450px;
 }
