@@ -99,7 +99,7 @@ h1{
   font-size: 100px;
 }
 
-h2{
+h2, #entree, #maincourse, #dessert, #drinks{
   color: var(--black);
   font-family: "Roboto Slab", serif;
   font-size: 60px;
@@ -220,6 +220,10 @@ header a{
 
 .scale{
   color: var(--darkgray);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*main*/
@@ -393,6 +397,32 @@ header a{
   text-align: right;
   margin: 0;
   max-width: 100% !important;
+}
+
+.menu_button{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.menu_button a button{
+  height: 50px;
+  min-width: 100px;
+  background-color: var(--black);
+  color: var(--lightgray);
+  border: none;
+  font-style: italic;
+  transition: .4s ease-in-out;
+  margin: 0 auto;
+}
+
+.menu_button a button:hover{
+  background-color: var(--orange);
+  color: white;
+  transform: scale(1.1);
 }
 
 /*About us*/
