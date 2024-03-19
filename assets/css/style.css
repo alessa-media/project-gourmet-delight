@@ -229,10 +229,9 @@ html {
 .top {
   --offset: 50px; 
   position: sticky;
-  bottom: 20px;      
-  margin-right:10px; 
-  place-self: end;
-  margin-top: calc(100vh + var(--offset));
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
   
   /* visual styling */
   text-decoration: none;
@@ -245,6 +244,26 @@ html {
   white-space: nowrap;
   font-style: italic;
   transition: .4s ease-in-out;
+  
+  /*
+  --offset: 50px; 
+  position: sticky;
+  bottom: 20px;
+  margin-right:10px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling 
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: var(--lightgray);
+  background: var(--black);
+  border: none;
+  border-radius: 100px;
+
+  font-style: italic;
+  transition: .4s ease-in-out; */
 }
 
 /*main*/
