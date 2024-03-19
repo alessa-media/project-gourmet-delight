@@ -245,7 +245,7 @@ header a{
   margin: 100px auto 100px auto;
 }
 
-.button_reservation{
+.button_reservation button{
   display: block;
   margin: 0 auto;
   padding: 30px;
@@ -256,7 +256,7 @@ header a{
   transition: .4s ease-in-out;
 }
 
-.button_reservation:hover{
+.button_reservation button:hover{
   background-color: var(--orange);
   color: white;
   transform: scale(1.1);
@@ -268,7 +268,7 @@ header a{
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  margin: 0 auto;
+  margin: 150px auto;
   margin-bottom: 100px;
 }
 
@@ -291,6 +291,7 @@ header a{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   max-width: 70%;
   margin: 0 auto;
 }
@@ -298,7 +299,7 @@ header a{
 .specialities_button-menu button, .specialities_button-contact button{
   flex-basis: 50%;
   height: 50px;
-  max-width: 100px;
+  min-width: 100px;
   background-color: var(--black);
   color: var(--lightgray);
   border: none;
@@ -344,7 +345,7 @@ header a{
   z-index: 1;
 }
 
-.img-element-button{
+.img-element-button button{
   z-index: 2;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -352,8 +353,7 @@ header a{
   left: 50%;
   cursor: pointer;
   text-decoration: none;
-  transition: color .4s ease-in-out;
-  background-color: .4s ease-in-out;
+  transition: color .4s ease-in-out, background-color .4s ease-in-out, transform .4s ease-in-out;
   background-color: var(--black);
   color: var(--lightgray);
   font-style: italic;
@@ -365,10 +365,10 @@ header a{
   align-items: center;
 }
 
-.img-element-button:hover{
-  background-color: var(--red);
-  color: var(--lightgray);
-  font-weight: normal;
+.img-element-button button:hover{
+  background-color: var(--orange);
+  color: white;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 /*Menu-Page*/
