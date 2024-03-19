@@ -226,6 +226,27 @@ html {
   scroll-behavior: smooth;
 }
 
+.top {
+  --offset: 50px; 
+  position: sticky;
+  bottom: 20px;      
+  margin-right:10px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: var(--lightgray);
+  background: var(--black);
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-style: italic;
+  transition: .4s ease-in-out;
+}
+
 /*main*/
 .main p{
   max-width: 80%;
