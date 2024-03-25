@@ -610,3 +610,80 @@ footer > *{
 .social-icons > * {
   padding: 10px;
 }
+
+/*Responsive für Mobile-Bildschirm*/ 
+@media (max-width: 768px) {
+  /*Index Page*/
+  .adress_element{
+    flex-direction: column;
+  }
+
+  .specialities_button{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialities_button-menu button{
+    margin-bottom: 50px;
+  }
+
+  .img-element{
+    flex-direction: column;
+  }
+    
+  .img-element-element{
+    width: 100%;
+  }
+
+  /*menu*/
+  .menu_button{
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu_button a{
+    flex-basis: 50%;
+  }
+
+  .menu_button a button{
+    min-width: 150px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  /*Über uns*/
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .team_img, .team_img-jobsearching {
+    width: 50%;
+    height: auto;
+  }
+
+  .quality{
+    flex-direction: column;
+    padding: 100px 0px 100px 0px;
+  }
+  
+  .quality > * {
+    padding-bottom: 50px;
+  }
+
+  .quality div img{
+    height: 150px;
+  }
+
+  /*Footer*/
+  footer{
+    flex-direction: column;
+  }
+}
