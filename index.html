@@ -15,7 +15,7 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo_favicon.svg">
 </head>
 <body>
-    <header>
+    <header>     
         <div class="mobile_logo_hamburger">
             <div class="hamburger" id="hamburger">
                 <i id="opener" data-feather="menu"></i>
@@ -133,5 +133,28 @@
         feather.replace();
     </script>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        feather.replace();
+     
+        var hamburger = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobileMenu');
+        var closeMenu = document.querySelector('.close-mobile-menu');
+        var nav = document.querySelector('.main-menu ul');
+     
+        // Hamburger-Menu open
+        hamburger.addEventListener('click', function () {
+          mobileMenu.style.display = 'block';
+   
+        });
+     
+        // Menu close
+        closeMenu.addEventListener('click', function () {
+          mobileMenu.style.display = 'none';
+         
+        });
+     
+      });
+    </script>
 </body>
 </html>
