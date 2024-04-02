@@ -11,6 +11,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        feather.replace();
+     
+        var hamburger = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobileMenu');
+        var closeMenu = document.querySelector('.close-mobile-menu');
+        var nav = document.querySelector('.main-menu ul');
+     
+        // Hamburger-Menu open
+        hamburger.addEventListener('click', function () {
+          mobileMenu.style.display = 'block';
+   
+        });
+     
+        // Menu close
+        closeMenu.addEventListener('click', function () {
+          mobileMenu.style.display = 'none';
+         
+        });
+     
+      });
+    </script>
+
     <title>Menü | Gourmet Delight (Wil SG)</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo_favicon.svg">
 </head>

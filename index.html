@@ -11,6 +11,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        feather.replace();
+     
+        var hamburger = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobileMenu');
+        var closeMenu = document.querySelector('.close-mobile-menu');
+        var nav = document.querySelector('.main-menu ul');
+     
+        // Hamburger-Menu open
+        hamburger.addEventListener('click', function () {
+          mobileMenu.style.display = 'block';
+   
+        });
+     
+        // Menu close
+        closeMenu.addEventListener('click', function () {
+          mobileMenu.style.display = 'none';
+         
+        });
+     
+      });
+    </script>
+
     <title>Startseite | Gourmet Delight (Wil SG)</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo_favicon.svg">
 </head>
@@ -73,13 +97,11 @@
         <a class="button_reservation" href="contact.html"><button>Jetzt reservieren</button></a>
         <div class="adress_element">
             <a href="tel:0780000000">078 000 00 00</a>
-            <p>
-                Öffnungszeiten<br>
-                Montag bis Donnerstag<br>
-                11 Uhr bis 18 Uhr<br>
-                Freitag und Samstag<br>
-                16 Uhr bis 21 Uhr
-            </p>
+            <div>
+                <p class="adress_element-text" style="font-weight: bold;">Öffnungszeiten</p>
+                <p class="adress_element-text">Montag bis Donnerstag: <br> Uhr bis 18 Uhr</p>
+                <p class="adress_element-text">Freitag und Samstag: <br> 16 Uhr bis 21 Uhr</p>
+            </div>
             <a href="info@gourmet-delight.ch">info@gourmet-delight.ch</a>
         </div>
         <div class="specialities">
@@ -133,28 +155,5 @@
         feather.replace();
     </script>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        feather.replace();
-     
-        var hamburger = document.getElementById('hamburger');
-        var mobileMenu = document.getElementById('mobileMenu');
-        var closeMenu = document.querySelector('.close-mobile-menu');
-        var nav = document.querySelector('.main-menu ul');
-     
-        // Hamburger-Menu open
-        hamburger.addEventListener('click', function () {
-          mobileMenu.style.display = 'block';
-   
-        });
-     
-        // Menu close
-        closeMenu.addEventListener('click', function () {
-          mobileMenu.style.display = 'none';
-         
-        });
-     
-      });
-    </script>
 </body>
 </html>

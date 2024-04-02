@@ -150,12 +150,6 @@ img{
   width: 40px;
   height: 40px;
   z-index: 3;
-
-  /**
-   * Dark Arrow Down
-   */
-  /*background-image: url(file:///C:/Users/Alessa%20Sprinz%20BZWU/OneDrive%20-%20Kt.%20SG%20BLD/Dokumente/2.%20Semester/ICT/project-gourmet-delight/assets/img/arrow.svg);
-  */
   background-size: contain;
 }
 
@@ -362,6 +356,10 @@ html {
   text-align: center;
 }
 
+.adress_element-text{
+  padding: 0px;
+}
+
 .specialities{
   background-color: var(--darkgray);
   padding: 50px 0px 150px;
@@ -457,12 +455,12 @@ html {
 }
 
 /*Menu-Page*/
-.menu_grid{
+.menu_hero{
   padding-bottom: 150px;
 }
 
-.grid-container {
-  display: grid;
+.hero-container {
+  display: hero;
   grid-template-columns: auto auto;
   max-width: 70%;
   margin: 0 auto;
@@ -619,6 +617,11 @@ html {
 .quality div img{
   height: 200px;
   width: auto;
+  transition: ease-in-out .4s;
+}
+
+.quality div img:hover{
+  scale: 1.1;
 }
 
 /*Contact form*/
