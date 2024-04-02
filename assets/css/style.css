@@ -455,12 +455,12 @@ html {
 }
 
 /*Menu-Page*/
-.menu_hero{
+.menu_grid{
   padding-bottom: 150px;
 }
 
-.hero-container {
-  display: hero;
+.grid-container {
+  display: grid;
   grid-template-columns: auto auto;
   max-width: 70%;
   margin: 0 auto;
