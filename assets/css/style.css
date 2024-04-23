@@ -560,11 +560,12 @@ html {
 
 .team_img-job {
   position: absolute;
-  top: 50%; /* Positioned at the vertical center */
-  left: 50%; /* Positioned at the horizontal center */
-  transform: translate(-50%, -50%); /* Center the button */
-  z-index: 1; /* Ensure the button is on top of the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
+
 /*
 .team_img-job, .team_img-jobsearching {
   position: absolute;
@@ -740,7 +741,66 @@ footer > *{
     padding: 10px 20px;
   }
 
-  /*Über uns*/
+  /*Homepage*/
+  .adress_element{
+    max-width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .adress_element > *{
+    padding-bottom: 50px;
+  }
+  
+  .adress_element-text{
+    padding: 0px;
+  }
+  
+  .adress_element-text{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.specialities{
+  padding: 50px 0px 50px;
+}
+
+.specialities_button{
+  flex-direction: column;
+  align-content: space-evenly;
+}
+
+.specialities_button-menu button, .specialities_button-contact button{
+  height: 80px;
+  min-width: 150px;
+}
+
+.specialities_button a{
+  padding-bottom: 30px;
+}
+
+.img-element {
+  flex-direction: column;
+}
+
+.img-element-element {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.img-element-element img {
+  height: 50vh;
+}
+
+.img-element-element:first-child img, .img-element-element:last-child img{
+  display: none;
+}
+
+/*Über uns*/
   .team {
     display: flex;
     flex-wrap: wrap;
@@ -796,27 +856,6 @@ footer > *{
   h2, #entree, #maincourse, #dessert, #drinks{ 
     font-size: 3rem;
   }
-  /*Index Page*/
-  .adress_element{
-    flex-direction: column;
-  }
-
-  .specialities_button{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .specialities_button-menu button{
-    margin-bottom: 50px;
-  }
-
-  .img-element{
-    flex-direction: column;
-  }
-    
-  .img-element-element{
-    width: 100%;
-  }
 
   /*menu*/
   .menu_button{
@@ -837,6 +876,4 @@ footer > *{
     display: flex;
     justify-content: center;
   }
-  
-  
 }
