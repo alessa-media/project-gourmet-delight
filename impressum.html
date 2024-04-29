@@ -1,25 +1,183 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
-
-    <title>Impressum & Datenschutz | Gourmet Delight (Wil SG)</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo_favicon.svg">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://unpkg.com/feather-icons"></script>
     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            feather.replace();
+         
+            var hamburger = document.getElementById('hamburger');
+            var mobileMenu = document.getElementById('mobileMenu');
+            var closeMenu = document.querySelector('.close-mobile-menu');
+            var nav = document.querySelector('.main-menu ul');
+         
+            // Hamburger-Menu open
+            hamburger.addEventListener('click', function () {
+              mobileMenu.style.display = 'block';
+       
+            });
+         
+            // Menu close
+            closeMenu.addEventListener('click', function () {
+              mobileMenu.style.display = 'none';
+             
+            });
+         
+          });
+        </script>
+    
+        <title>Impressum & Datenschutz | Gourmet Delight (Wil SG)</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo_favicon.svg">
+    </head>
+<body>
+    <header>     
+        <div class="mobile_logo_hamburger">
+            <div class="hamburger" id="hamburger">
+                <i id="opener" data-feather="menu"></i>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="menu.html">Menü</a></li>
+                <li><a href="index.html"><img src="assets/img/logo_weiss.svg"></a></li>
+                <li><a href="about_us.html">Über uns</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-header">
+                <span class="close-mobile-menu">&times;</span>
+            </div>
+            <ul class="mobile-menu-list">
+                <a href="index.html">Startseite</a>
+                <a href="menu.html">Menu</a>
+                <a href="about_us.html">Über uns</a>
+                <a href="contact.html">Kontakt</a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="hero-img-container">
+            <img class="hero-img" src="assets/img/hintergrund.jpg" alt="Eine Frau isst am Tisch">
+        </div>
+        <h1>Impressum <br>& Datenschutz</h1>
+        <div class="arrow bounce"><img src="assets/img/arrow.svg" alt="Pfeil nach unten"></div>
+        <h2>Impressum</h2>
+        <p>
+            Gourmet Delight<br>
+            Sandra Brugger<br>
+            St. Gallerstrasse 9<br>
+            9000 St. Gallen<br>
+            Schweiz
+        </p>
+        <p>
+            Kontakt:<br>
+            Telefon: +79 000 00 00<br>
+            E-Mail: info@gourmet-delight.ch
+        </p>
+        <p>
+            Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+            CH123456789
+        </p>
+        <p>
+            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+            Sandra Brugger<br>
+            St. Gallerstrasse 9<br>
+            9000 St. Gallen
+        </p>
+        <h3>Urheberrecht und Bildnachweise</h3>
+        <h4>Bildquellen</h4>
+        <p>
+            Die auf dieser Website verwendeten Bilder und Grafiken sind
+            urheberrechtlich geschützt und Eigentum von Sandra Brugger, sofern nicht anders angegeben.<br>
+        
+            Die Bilder und Grafiken dürfen nicht ohne vorherige schriftliche Genehmigung
+            durch Sandra Brugger verwendet oder vervielfältigt werden.
+        </p>
+        <h4>Video- und Textquellen</h4>
+        <p>
+            Das eingebettete Video ist Eigentum von Sandra Brugger und darf ebenfalls
+            nicht ohne vorherige schriftliche Genehmigung verwendet oder vervielfältigt werden.<br>
+
+            Texte wurden von ChatGPT generiert, erweitert oder verbessert. Alle von ChatGPT betroffenen
+            Texte wurden persönlich gekürzt, geprüft und korrigiert.<br>
+            
+        </p>
+        <h4>Haftungshinweis</h4>
+        <p>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für
+            die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren
+            Betreiber verantwortlich.
+        </p>
+        <h2>Datenschutz</h2>
+        <p>Wir freuen uns über Ihr Interesse an unserer Webseite. Der Schutz Ihrer Privatsphäre ist für
+            uns sehr wichtig. Nachfolgend informieren wir Sie ausführlich über den Umgang mit Ihren Daten.</p>
+
+        <h3>Name und Kontaktdaten des Verantwortlichen</h3>
+            <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+            <p>
+                Sandra Brugger<br>
+                St. Gallerstrasse 9<br>
+                9000 St. gallen<br>
+                Schweiz<br>
+                E-Mail: info@gourmet-delight.ch
+            </p>
+        <h3>Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck von deren Verwendung</h3>
+        <p>
+            Beim Besuch unserer Website werden Daten automatisch durch das Hosting-Unternehmen und durch
+            uns erfasst. Diese Daten umfassen:
+        </p>
+        <p>
+            - IP-Adresse des anfragenden Rechners <br>
+            - Datum und Uhrzeit des Zugriffs <br>
+            - Name und URL der abgerufenen Datei <br>
+            - Website, von der aus der Zugriff erfolgt (Referrer-URL) <br>
+            - verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers
+        </p>
+        <p>
+            Diese Daten werden benötigt, um die Funktionalität der Website sicherzustellen und werden
+            nur zu statistischen Zwecken ausgewertet.
+        </p>
+        <p>Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+        <h3>Weitergabe von Daten</h3>
+        <p>
+            Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, es sei denn, wir sind gesetzlich
+            dazu verpflichtet oder Sie haben uns ausdrücklich Ihre Einwilligung gegeben.
+        </p>
+        <h3>Cookies</h3>
+        <p>Unsere Website verwendet keine Cookies.</p>
+        <h3>Analyse-Tools</h3>
+        <p>Wir verwenden keine Analyse-Tools auf unserer Website.</p>
+        <h3>Betroffenenrechte</h3>
+        <p>
+            Sie haben das Recht auf Auskunft über die personenbezogenen Daten, die wir über Sie
+            gespeichert haben. Sie haben auch das Recht, die Berichtigung, Löschung oder Einschränkung
+            der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+        </p>
+        <h3>Widerspruchsrecht</h3>
+        <p>Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen.</p>
+        <p>
+            Wenn Sie Fragen zum Datenschutz auf unserer Website haben oder Ihre Rechte bezüglich Ihrer
+            persönlichen Daten ausüben möchten, kontaktieren Sie uns bitte unter den oben angegebenen Kontaktdaten.
+        </p>
+    </main>
     <footer>
         <div class="footer_adresse">
             <p>
-                Alessa Sprinz<br>
-                Spechtstrasse 5<br>
-                9320 Arbon
+                Sandra Brugger<br>
+                Schützenstrasse 8<br>
+                9500 Wil
             </p>
         </div>
         <div class="footer_impressum">
@@ -31,7 +189,6 @@
             <a href="https://www.linkedin.com/feed/" target="_blank"><i data-feather="linkedin"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i data-feather="youtube"></i></a>
         </div>
-    </footer>
     <!--Replace i with svg-->
     <script>
         feather.replace();
