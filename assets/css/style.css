@@ -67,7 +67,6 @@
   font-style: normal;
 }
 
-
 /*Schriften, Listen und Bilder*/
 a{
   color: var(--orange);
@@ -517,7 +516,6 @@ html {
   left: 20px;
   z-index: 999;
   margin-right:10px; 
-  /*place-self: end;*/
   margin-top: calc(100vh + var(--offset));
   
   text-decoration: none;
@@ -550,7 +548,7 @@ html {
 .team_img, .team_img-jobsearching {
   position: relative;
   display: block;
-  width: 100%; /* Set a fixed width for all images */
+  width: 100%;
   height: 600px;
   overflow: hidden;
 }
