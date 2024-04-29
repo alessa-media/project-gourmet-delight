@@ -77,6 +77,7 @@ a{
 a:hover{
   color: var(--darkgray);
   font-weight: bold;
+  cursor: pointer;
 }
 
 a, button{
@@ -229,12 +230,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Navigation
-.main-menu{
-  display: inline-block;
-  text-align: right;
-}
-
 /*Burgermenu*/
 .hamburger {
   display: none;
@@ -342,6 +337,7 @@ html {
   background-color: var(--orange);
   color: white;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .adress_element{
@@ -398,6 +394,7 @@ html {
   background-color: var(--orange);
   color: white;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .img-element{
@@ -455,6 +452,7 @@ html {
   background-color: var(--orange);
   color: white;
   transform: translate(-50%, -50%) scale(1.1);
+  cursor: pointer;
 }
 
 /*Menu-Page*/
@@ -509,6 +507,7 @@ html {
   background-color: var(--orange);
   color: white;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .top {
@@ -538,6 +537,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .team > * {
@@ -569,15 +569,6 @@ html {
   z-index: 1;
 }
 
-/*
-.team_img-job, .team_img-jobsearching {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-}*/
-
 .team_img p, .team_img h4, .team_img-jobsearching h4 {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -604,6 +595,7 @@ html {
   background-color: var(--orange);
   color: white;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .quality{
@@ -701,7 +693,7 @@ footer > *{
 
 /*Responsive für Tablet-Bildschirm*/
 @media (max-width: 768px) {
-  /*general stuff*/
+/*general stuff*/
   h1{
     font-size: 5rem;
   }
@@ -709,8 +701,8 @@ footer > *{
   h2, #entree, #maincourse, #dessert, #drinks{ 
     font-size: 3rem;
   }
-  
-  /*menu*/
+
+/*menu*/
   .menu_button{
     flex-direction: row;
     justify-content: space-between;
@@ -725,7 +717,11 @@ footer > *{
     margin: 20px 0px 20px 0px;
   }
 
-  /*Header & Navigation*/
+  .grid-container {
+    padding-bottom: 60px;
+  }
+
+/*Header & Navigation*/
   .main-menu{
     display: none;
   }
@@ -751,52 +747,52 @@ footer > *{
     flex-direction: column;
     margin: 100px 0px;
   }
-  
+
   .adress_element > *{
     padding-bottom: 50px;
   }
-  
+
   .adress_element-text{
     padding: 0px;
     max-width: 100%;
   }
 
-.specialities{
-  padding: 50px 0px 50px;
-}
+  .specialities{
+    padding: 50px 0px 50px;
+  }
 
-.specialities_button{
-  flex-direction: column;
-  align-content: space-evenly;
-}
+  .specialities_button{
+    flex-direction: column;
+    align-content: space-evenly;
+  }
 
-.specialities_button-menu button, .specialities_button-contact button{
-  height: 80px;
-  min-width: 150px;
-}
+  .specialities_button-menu button, .specialities_button-contact button{
+    height: 80px;
+    min-width: 150px;
+  }
 
-.specialities_button a{
-  padding-bottom: 30px;
-}
+  .specialities_button a{
+    padding-bottom: 30px;
+  }
 
-.img-element {
-  flex-direction: column;
-}
+  .img-element {
+    flex-direction: column;
+  }
 
-.img-element-element {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
+  .img-element-element {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
 
-.img-element-element img {
-  height: 50vh;
-}
+  .img-element-element img {
+    height: 50vh;
+  }
 
-.img-element-element:first-child img, .img-element-element:last-child img{
-  display: none;
-}
+  .img-element-element:first-child img, .img-element-element:last-child img{
+    display: none;
+  }
 
 /*Über uns*/
   .team {
@@ -877,17 +873,12 @@ footer > *{
     justify-content: center;
   }
 
-  .menu_button a{
-    flex-basis: 50%;
-  }
-
-  .menu_button a button{
-    min-width: 150px;
-    margin: 20px 0px 20px 0px;
-  }
-
   .menu_button a {
     display: flex;
     justify-content: center;
+  }
+
+  .grid-container {
+    padding-bottom: 80px;
   }
 }
