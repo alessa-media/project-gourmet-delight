@@ -636,11 +636,17 @@ html {
   border-radius: 2px;
   min-height: 30px;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .message{
   height: 90px;
   width: 100% !important;
+  background-color: var(--lightgray);
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .checkbox{
